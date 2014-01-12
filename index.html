@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>game1_11_14</title>
+		<link rel='stylesheet' href='game1_11_14.css' type='text/css' />
+	</head>
+	<body bgcolor="#363636">
+		<p id='message_startgame'>Welcome to another game.</p>
+		<table id="rooms">
+			<tr> <td id="r3">R3</td> <td id="r2">R2</td> </tr>
+			<tr> <td id="s4">S4</td> <td id="r1">R1</td> </tr>
+		</table>
+		<canvas id="myCanvas" width="268" height="268"></canvas>
+		<script type="text/javascript">
+			var c = document.getElementById("myCanvas");
+			var ctx=c.getContext("2d");
+			ctx.fillStyle="#808080";
+			// left margin, top margin, horiz. rect. width, vert. rect. height
+			ctx.fillRect(35,130,55,10);
+			ctx.fillRect(175,130,55,10);
+			ctx.fillRect(130,35,10,55);
+		</script>
+		<table id="compass">
+			<tr> <td></td>  <td>N</td> <td></td> </tr>
+			<tr> <td>W</td> <td>+</td> <td>E</td> </tr>
+			<tr> <td></td> <td>S</td> <td></td> </tr>
+		</table>	
+		<div id="output1"></div>
+		<div id="output2"></div><br />
+			<span id="buttons">
+				<button id="north" onclick="playerDirectionMove('N')">North</button>
+				<button id="south" onclick="playerDirectionMove('S')">South</button>
+				<button id="south" onclick="playerDirectionMove('W')">West</button>
+				<button id="south" onclick="playerDirectionMove('E')">East</button>
+				<button id="south" onclick="playerDirectionMove('U')">Up</button>
+				<button id="south" onclick="playerDirectionMove('D')">Down</button>
+			</span><br/><br/>
+			<span id="buttons2">
+				<button id="take" onclick="take()">Take</button>
+				<button id="drop" onclick="drop()">Drop</button>
+				<button id="inventory" onclick="inventory()">Inventory</button>
+				<button id="meet" onclick="meet()">Meet</button>
+				<button id="help" onclick="help()">Help</button>
+			</span><br/>
+		<span id="level"></span><br/>
+		<p class="help">HELP: The year is 1978. You are in the text game World HQ-programming.</p>
+		<p class="help">P = You, R = Room (numbered for your convenience), T = Time Machine,</p>
+		<p class="help">S = Stairwell, # = Object, Use buttons to move from room to room,</p>
+		<p class="help">up and down stairs, to take and drop the object, to meet a worker,</p>
+		<p class="help">to see your inventory, to use the time machine, to see more help.</p>
+		<script type="text/javascript" src="game1_11_14.js"></script>
+	</body>
+</html>
