@@ -1,0 +1,50 @@
+body {
+	color:white;
+	font-family:Arial;
+	font-size:1.1em;
+}
+#r1, #r2, #r3, #s4 {  
+	width: 110px;
+	height: 110px;
+	padding:10px;
+	border: 2px #666 solid;
+	text-align: center;
+	font-size: 24px;
+	background-color: beige;	
+	
+}
+#rooms { 
+	border-collapse: collapse; 
+	float:left;
+	margin-right:20px;
+	color:#363636;
+}
+#compass { 
+	font-size:1.2em;
+}
+#buttons {
+	color:white;
+	border-style:dotted;
+	border-width:1px;
+	padding:10px;
+}
+#buttons2 {
+	color:white;
+	border-style:dotted;
+	border-width:1px;
+	padding:10px;
+	margin-left:14px;
+}
+.help {
+	line-height:50%;
+	font-size: 0.9em;
+}
+#surround {
+	color:white;
+	border-style:dotted;
+	border-width:1px;
+	padding:10px;
+}
+#myCanvas {
+	position:absolute; left:6px; top:68px;
+}
